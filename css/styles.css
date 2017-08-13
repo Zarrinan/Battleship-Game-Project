@@ -215,7 +215,7 @@ p:hover {
 .fleet {
   width: 400px;
   height: 130px;
-  background-color: rgba(104,104,104,1);
+  background-color: rgba(164,164,164,1);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -325,7 +325,7 @@ h1 {
 .cellb {height: 35px;}
 
 .gameThird {width: 700px; height: 600px;}
-}
+
 
 
 
