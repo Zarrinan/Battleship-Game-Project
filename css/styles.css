@@ -260,4 +260,75 @@ img {
   height: 100%;
 }
 
+@media (max-width: 1024px) {
+.landingPage {
+  width: 700px; height: 600px;
+  background: url('https://image.ibb.co/gpW1uv/newone.jpg');
+}
+p {
+  font-size: 18px;
+  width: 380px;
+  height: 300px;
+}
+
+p:hover {
+  font-size: 18px;
+  width: 380px;
+  height: 300px;
+  margin: 20px auto;
+  text-align: center;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 37px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.inputName {
+  width: 400px;
+}
+
+.gameFirst {width: 700px; height: 600px;}
+
+#startgame {
+  margin-right: 30px;
+  margin-top: ;
+}
+.cellRow {
+  width: 450px;
+  height: 35px;
+}
+.grid {
+  width: 450px;
+  height: 450px;
+}
+.fleet {
+  width: 350px;
+  height: 100px;
+}
+#ship5 {
+  height: 100px;
+}
+
+#ship4 {
+  height: 90px;
+}
+.gameSecond {
+  width: 700px; height: 600px;
+}
+.cell  {height: 35px;}
+.cell2 {height: 35px;}
+.cellb {height: 35px;}
+
+.gameThird {width: 700px; height: 600px;}
+}
+
+
+
+
+
 
