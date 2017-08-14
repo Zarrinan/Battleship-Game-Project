@@ -106,7 +106,7 @@ $(this).off("click");
 //click event on all cells ships where ships are, once clicked they'll turn orange
 //which means there is a ship,
 $cellb.click(function turnHit() {
-$cell2 = $(this).css('background-color', 'orange');
+$cellb = $(this).css('background-color', 'orange');
 //once a cell is clicked, it's event listener is removed
 $(this).off("click");
 //once a target is hit, check if a whole ship is destroyed
@@ -119,16 +119,17 @@ checkShip2();
 checkWin();
 });
 
+//counter of a player's unsuccessfull clicks
 $(document).ready(function clicksNumber () {
 let count = 0;
   $('.cell2').click(function() {
     count++;
     $('#counter').html('Number of clicks is: '+count);
     console.log(count);
+//if a player makes 35 unsuccessfull clicks, the game stops and reloads
     if (count === 35){
-    $cell2.off('click');
-    $cellb.off('click');
-    alert('Game is over:(');
+    setTimeout(function() {alert('Game is over:(');}, 400);
+    setTimeout(function() {location.reload();}, 700);
   };
 });
 });

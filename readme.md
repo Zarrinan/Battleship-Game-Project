@@ -31,7 +31,7 @@ And wrote the code.
 
 
 Link to the game
-[Battleship Game](http://pirate-christine-32633.bitballoon.com/)
+[Battleship Game](http://diver-kiloliter-41852.bitballoon.com/)
 
 ## Links and Resources
 [Battleship online game](http://www.battleshiponline.org/)
