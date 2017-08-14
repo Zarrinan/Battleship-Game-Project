@@ -129,7 +129,7 @@ $cellb.click(function sendToArray() {
     const position = d.indexOf(cellId);
     if(position > -1) {
     console.log(i, position)
-    $ships[i][position] = cellId;
+    $ships[i].push(cellId);
 //check if it works
     console.log($ships);
     console.log($ships[0].length, $ships[1].length, $ships[2].length, $ships[3].length, $ships[4].length)
@@ -176,9 +176,10 @@ function checkShip3b() {
 function checkWin() {
   console.log($ships[0].length + $ships[1].length + $ships[2].length + $ships[3].length + $ships[4].length);
   if ($ships[0].length + $ships[1].length + $ships[2].length + $ships[3].length + $ships[4].length === 16){
-  alert('winner!');
-//automatically redirect a player to the third page with congratulations message
-  goToThird();
+  setTimeout(function() {alert('You are a winner!'); }, 500);
+//automatically redirect a player to the third page with congratulations message, after a player
+//sees alerts on the last ship being destroyed and that they won
+  setTimeout(function() {goToThird();}, 600);
 //display a player's name in a congrats message
   $winName.append($input.val());
   }
