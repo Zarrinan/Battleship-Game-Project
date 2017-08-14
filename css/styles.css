@@ -1,0 +1,334 @@
+body {
+  font-size: 0;
+  background-color: rgba(233,233,233, 1);
+  }
+
+main {
+  position: relative;
+}
+
+.landingPage {
+  margin: 20px auto;
+  width: 1200px;
+  height: 750px;
+  background: url('https://image.ibb.co/gjtuwa/orseawithship.jpg');
+  background-size: cover;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  left: 75px;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 30px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+#formhere {
+  text-align: center;
+}
+
+
+p {
+  font-size: 20px;
+  width: 500px;
+  height: 250px;
+  margin: 20px auto;
+  text-align: center;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+p:hover {
+  font-size: 20px;
+  width: 500px;
+  height: 250px;
+  margin: 20px auto;
+  text-align: center;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 10px;
+}
+
+
+.instructions {
+  width: 500px;
+  height: 400px;
+  margin: 30px auto;
+}
+
+.inputName {
+  width: 800px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#forName {
+  width: 270px;
+  height: 23px;
+  border-radius: 7px;
+  padding: 5px 15px;
+  font-size: 20px;
+  text-align: center;
+  margin: 5px;
+}
+
+#forSubmit {
+  width: 150px;
+  height: 30px;
+  padding: 1px;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0;
+  background-color: #B22222;
+  border-radius: 7px;
+  text-align: center;
+}
+
+
+.gameFirst {
+  margin: 20px auto;
+  width: 1200px;
+  height: 750px;
+  background: url('https://image.ibb.co/h9Y0Zv/sea1.jpg');
+  background-size: cover;
+  border-radius: 10px;
+  position: absolute;
+  left: 75px;
+}
+
+.gameSecond {
+  margin: 20px auto;
+  width: 1200px;
+  height: 750px;
+  background: url('https://image.ibb.co/h9Y0Zv/sea1.jpg');
+  background-size: cover;
+  border-radius: 10px;
+  position: absolute;
+  left: 75px;
+}
+
+#fleetSecond {
+  width: 400px;
+  height: 150px;
+  background-color: rgba(180,180,180,0);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.cell2 {
+  width: 40px;
+  height: 40px;
+  background: rgba(233,233,233,0.1 );
+  border: 1px solid #C0C0C0;
+  border-radius: 2px;
+  color: #6c6c6c;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  flex: 0 0 6%;
+}
+
+.cellb {
+  width: 40px;
+  height: 40px;
+  background: rgba(233,233,233,0.1);
+  border: 1px solid #C0C0C0;
+  border-radius: 2px;
+  color: #6c6c6c;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  flex: 0 0 6%;
+}
+
+.gameThird {
+  margin: 20px auto;
+  width: 1200px;
+  height: 750px;
+  background: url('https://image.ibb.co/h9Y0Zv/sea1.jpg');
+  background-size: cover;
+  border-radius: 10px;
+  position: absolute;
+  left: 75px;
+}
+.grid {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+#startgame {
+  float: right;
+  margin-right: 200px;
+  margin-top: 0;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 15px;
+  text-align: center;
+  padding: 5px 15px;
+}
+.grid {
+  border-radius: 25px;
+}
+.cell {
+  width: 40px;
+  height: 40px;
+  background: rgba(233,233,233, 0.5);
+  border: 1px solid #C0C0C0;
+  border-radius: 2px;
+  color: #6c6c6c;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  flex: 0 0 6%;
+}
+
+.cellRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+}
+.announce {
+  width: 400px;
+  height: 35px;
+  line-height: 20px;
+  margin: 0 auto;
+  font-size: 30px;
+  text-align: center;
+  padding: 3px;
+  margin-top: 3px;
+  font-weight: bold;
+}
+.fleet {
+  width: 400px;
+  height: 130px;
+  background-color: rgba(164,164,164,1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.ship {
+  width: 60px;
+  height: 120px;
+  flex: 0 0 40px;
+  justify-content: space-around;
+}
+
+.ship2 {
+  background-color: rgba(180,180,180, 0);
+  width: 60px;
+  height: 120px;
+  flex: 0 0 40px;
+  justify-content: space-around;
+}
+
+.ship3 {
+  width: 40px;
+  height: 80px;
+  flex: 0 0 40px;
+  justify-content: space-around;
+}
+
+#ship5 { height: 120px; width: 60px;}
+
+#ship4 { height: 100px; width: 60px;}
+
+#ship3 { height: 80px; width: 60px;}
+
+#ship3b { height: 80px; width: 60px;}
+
+#ship2 { height: 60px; width: 60px;}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+.landingPage {
+  width: 700px; height: 600px;
+  background: url('https://image.ibb.co/gpW1uv/newone.jpg');
+}
+p {
+  font-size: 18px;
+  width: 380px;
+  height: 300px;
+}
+
+p:hover {
+  font-size: 18px;
+  width: 380px;
+  height: 300px;
+  margin: 20px auto;
+  text-align: center;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 37px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.inputName {
+  width: 400px;
+}
+
+.gameFirst {width: 700px; height: 600px;}
+
+#startgame {
+  margin-right: 30px;
+  margin-top: ;
+}
+.cellRow {
+  width: 450px;
+  height: 35px;
+}
+.grid {
+  width: 450px;
+  height: 450px;
+}
+.fleet {
+  width: 350px;
+  height: 100px;
+}
+#ship5 {
+  height: 100px;
+}
+
+#ship4 {
+  height: 90px;
+}
+.gameSecond {
+  width: 700px; height: 600px;
+}
+.cell  {height: 35px;}
+.cell2 {height: 35px;}
+.cellb {height: 35px;}
+
+.gameThird {width: 700px; height: 600px;}
+
+
+
+
+
+
+

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+   <link rel='stylesheet' href='css/styles.css'>
+   <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+   crossorigin="anonymous"></script>
+</head>
+<body>
+<div>
+<main>
+
+   <!---  Landing Page-->
+
+<div class='landingPage'>
+<h1 class='landingPageH1'>Battleship Game</h1>
+<div class='Instructions'>
+  <p>Battleship, initially a two players game, here is a one-player game,
+  where a player tries to guess the location of  battleships hidden on a grid.
+There are 5 battleships, a 5-cell, a 4-cell, 2 3-cell, and one 2-cell battleship.
+At the beginning, a player will upload the dock (send the ships to the grid) by clicking
+on each of them. Once the dock is uploaded, the game starts.  A player clicks on a random
+cell on the grid. If there is a ship placed on that cell, the cell will turn orange,
+if there is no ship placed on a cell, it will just turn grey.
+The goal is to find all battleships with a minimum number of clicks!</p>
+</div>
+<div class='inputName'>
+<form id='formhere'>
+  <input id='forName' type="text" name="lname"> </br>
+  <input id='forSubmit' type="submit" value="Start the game">
+  </form>
+  </div>
+</div>
+
+
+    <!--- Game First Page-->
+
+
+<div class='gameFirst'>
+<h1>Battleship Game</h1>
+<button id='startgame'>start</button>
+<section class='grid'>
+   <div class='cellRow' id='r0'>
+     <div class="cell" id='c00'></div>
+     <div class="cell" id='c01'></div>
+     <div class="cell" id='c02'></div>
+     <div class="cell" id='c03'></div>
+     <div class="cell" id='c04'></div>
+     <div class="cell" id='c05'></div>
+     <div class="cell" id='c06'></div>
+     <div class="cell" id='c07'></div>
+     <div class="cell" id='c08'></div>
+     <div class="cell" id='c09'></div>
+   </div>
+   <div class='cellRow' id='r1'>
+     <div class="cell" id='c10'></div>
+     <div class="cell" id='c11'></div>
+     <div class="cell" id='c12'></div>
+     <div class="cell" id='c13'></div>
+     <div class="cell" id='c14'></div>
+     <div class="cell" id='c15'></div>
+     <div class="cell" id='c16'></div>
+     <div class="cell" id='c17'></div>
+     <div class="cell" id='c18'></div>
+     <div class="cell" id='c19'></div>
+   </div>
+   <div class='cellRow' id='r2'>
+     <div class="cell" id='c20'></div>
+     <div class="cell" id='c21'></div>
+     <div class="cell" id='c22'></div>
+     <div class="cell" id='c23'></div>
+     <div class="cell" id='c24'></div>
+     <div class="cell" id='c25'></div>
+     <div class="cell" id='c26'></div>
+     <div class="cell" id='c27'></div>
+     <div class="cell" id='c28'></div>
+     <div class="cell" id='c29'></div>
+   </div>
+   <div class='cellRow' id='r3'>
+     <div class="cell" id='c30'></div>
+     <div class="cell" id='c31'></div>
+     <div class="cell" id='c32'></div>
+     <div class="cell" id='c33'></div>
+     <div class="cell" id='c34'></div>
+     <div class="cell" id='c35'></div>
+     <div class="cell" id='c36'></div>
+     <div class="cell" id='c37'></div>
+     <div class="cell" id='c38'></div>
+     <div class="cell" id='c39'></div>
+   </div>
+   <div class='cellRow' id='r4'>
+     <div class="cell" id='c40'></div>
+     <div class="cell" id='c41'></div>
+     <div class="cell" id='c42'></div>
+     <div class="cell" id='c43'></div>
+     <div class="cell" id='c44'></div>
+     <div class="cell" id='c45'></div>
+     <div class="cell" id='c46'></div>
+     <div class="cell" id='c47'></div>
+     <div class="cell" id='c48'></div>
+     <div class="cell" id='c49'></div>
+   </div>
+   <div class='cellRow' id='r5'>
+     <div class="cell" id='c50'></div>
+     <div class="cell" id='c51'></div>
+     <div class="cell" id='c52'></div>
+     <div class="cell" id='c53'></div>
+     <div class="cell" id='c54'></div>
+     <div class="cell" id='c55'></div>
+     <div class="cell" id='c56'></div>
+     <div class="cell" id='c57'></div>
+     <div class="cell" id='c58'></div>
+     <div class="cell" id='c59'></div>
+   </div>
+   <div class='cellRow' id='r6'>
+     <div class="cell" id='c60'></div>
+     <div class="cell" id='c61'></div>
+     <div class="cell" id='c62'></div>
+     <div class="cell" id='c63'></div>
+     <div class="cell" id='c64'></div>
+     <div class="cell" id='c65'></div>
+     <div class="cell" id='c66'></div>
+     <div class="cell" id='c67'></div>
+     <div class="cell" id='c68'></div>
+     <div class="cell" id='c69'></div>
+   </div>
+   <div class='cellRow' id='r7'>
+     <div class="cell" id='c70'></div>
+     <div class="cell" id='c71'></div>
+     <div class="cell" id='c72'></div>
+     <div class="cell" id='c73'></div>
+     <div class="cell" id='c74'></div>
+     <div class="cell" id='c75'></div>
+     <div class="cell" id='c76'></div>
+     <div class="cell" id='c77'></div>
+     <div class="cell" id='c78'></div>
+     <div class="cell" id='c79'></div>
+   </div>
+   <div class='cellRow' id='r8'>
+     <div class="cell" id='c80'></div>
+     <div class="cell" id='c81'></div>
+     <div class="cell" id='c82'></div>
+     <div class="cell" id='c83'></div>
+     <div class="cell" id='c84'></div>
+     <div class="cell" id='c85'></div>
+     <div class="cell" id='c86'></div>
+     <div class="cell" id='c87'></div>
+     <div class="cell" id='c88'></div>
+     <div class="cell" id='c89'></div>
+   </div>
+   <div class='cellRow' id='r9'>
+     <div class="cell" id='c90'></div>
+     <div class="cell" id='c91'></div>
+     <div class="cell" id='c92'></div>
+     <div class="cell" id='c93'></div>
+     <div class="cell" id='c94'></div>
+     <div class="cell" id='c95'></div>
+     <div class="cell" id='c96'></div>
+     <div class="cell" id='c97'></div>
+     <div class="cell" id='c98'></div>
+     <div class="cell" id='c99'></div>
+   </div>
+   <div class='announce'>
+   Upload the dock
+   </div>
+  <div class='fleet'>
+     <div class="ship" id='ship5'>
+        <img src='https://image.ibb.co/m5tEev/submarinevertical.png'>
+     </div>
+     <div class="ship" id='ship4'>
+       <img src='https://image.ibb.co/djRQKv/submarine2.png'>
+     </div>
+     <div class="ship" id='ship3'>
+       <img src='https://image.ibb.co/h5EZCF/submarine3.png'>
+     </div>
+     <div class="ship" id='ship3b'>
+       <img src='https://image.ibb.co/f11szv/submarine4.png'>
+     </div>
+     <div class="ship" id='ship2'>
+       <img src='https://image.ibb.co/h5EZCF/submarine3.png'>
+     </div>
+   </div>
+   </section>
+   </div>
+
+    <!--- Game Second Page-->
+
+
+   <div class='gameSecond'>
+   <h1>Battleship Game</h1>
+
+<section class='grid' id='gridSecond'>
+   <div class='cellRow' id='r0'>
+     <div class="cell2" id='c00'></div>
+     <div class="cell2" id='c01'></div>
+     <div class="cellb" id='c02'></div>
+     <div class="cell2" id='c03'></div>
+     <div class="cell2" id='c04'></div>
+     <div class="cell2" id='c05'></div>
+     <div class="cell2" id='c06'></div>
+     <div class="cell2" id='c07'></div>
+     <div class="cell2" id='c08'></div>
+     <div class="cellb" id='c09'></div>
+   </div>
+   <div class='cellRow' id='r1'>
+     <div class="cell2" id='c10'></div>
+     <div class="cell2" id='c11'></div>
+     <div class="cellb" id='c12'></div>
+     <div class="cell2" id='c13'></div>
+     <div class="cellb" id='c14'></div>
+     <div class="cellb" id='c15'></div>
+     <div class="cellb" id='c16'></div>
+     <div class="cell2" id='c17'></div>
+     <div class="cell2" id='c18'></div>
+     <div class="cellb" id='c19'></div>
+   </div>
+   <div class='cellRow' id='r2'>
+     <div class="cell2" id='c20'></div>
+     <div class="cell2" id='c21'></div>
+     <div class="cellb" id='c22'></div>
+     <div class="cell2" id='c23'></div>
+     <div class="cell2" id='c24'></div>
+     <div class="cell2" id='c25'></div>
+     <div class="cell2" id='c26'></div>
+     <div class="cell2" id='c27'></div>
+     <div class="cell2" id='c28'></div>
+     <div class="cell2" id='c29'></div>
+   </div>
+   <div class='cellRow' id='r3'>
+     <div class="cell2" id='c30'></div>
+     <div class="cell2" id='c31'></div>
+     <div class="cellb" id='c32'></div>
+     <div class="cell2" id='c33'></div>
+     <div class="cell2" id='c34'></div>
+     <div class="cell2" id='c35'></div>
+     <div class="cell2" id='c36'></div>
+     <div class="cell2" id='c37'></div>
+     <div class="cell2" id='c38'></div>
+     <div class="cell2" id='c39'></div>
+   </div>
+   <div class='cellRow' id='r4'>
+     <div class="cell2" id='c40'></div>
+     <div class="cell2" id='c41'></div>
+     <div class="cellb" id='c42'></div>
+     <div class="cell2" id='c43'></div>
+     <div class="cell2" id='c44'></div>
+     <div class="cell2" id='c45'></div>
+     <div class="cell2" id='c46'></div>
+     <div class="cell2" id='c47'></div>
+     <div class="cell2" id='c48'></div>
+     <div class="cell2" id='c49'></div>
+   </div>
+   <div class='cellRow' id='r5'>
+     <div class="cell2" id='c50'></div>
+     <div class="cell2" id='c51'></div>
+     <div class="cell2" id='c52'></div>
+     <div class="cell2" id='c53'></div>
+     <div class="cell2" id='c54'></div>
+     <div class="cell2" id='c55'></div>
+     <div class="cell2" id='c56'></div>
+     <div class="cell2" id='c57'></div>
+     <div class="cell2" id='c58'></div>
+     <div class="cell2" id='c59'></div>
+   </div>
+   <div class='cellRow' id='r6'>
+     <div class="cell2" id='c60'></div>
+     <div class="cell2" id='c61'></div>
+     <div class="cell2" id='c62'></div>
+     <div class="cell2" id='c63'></div>
+     <div class="cell2" id='c64'></div>
+     <div class="cell2" id='c65'></div>
+     <div class="cell2" id='c66'></div>
+     <div class="cell2" id='c67'></div>
+     <div class="cell2" id='c68'></div>
+     <div class="cell2" id='c69'></div>
+   </div>
+   <div class='cellRow' id='r7'>
+     <div class="cell2" id='c70'></div>
+     <div class="cell2" id='c71'></div>
+     <div class="cell2" id='c72'></div>
+     <div class="cellb" id='c73'></div>
+     <div class="cellb" id='c74'></div>
+     <div class="cellb" id='c75'></div>
+     <div class="cell2" id='c76'></div>
+     <div class="cell2" id='c77'></div>
+     <div class="cell2" id='c78'></div>
+     <div class="cell2" id='c79'></div>
+   </div>
+   <div class='cellRow' id='r8'>
+     <div class="cell2" id='c80'></div>
+     <div class="cell2" id='c81'></div>
+     <div class="cell2" id='c82'></div>
+     <div class="cell2" id='c83'></div>
+     <div class="cell2" id='c84'></div>
+     <div class="cell2" id='c85'></div>
+     <div class="cellb" id='c86'></div>
+     <div class="cellb" id='c87'></div>
+     <div class="cellb" id='c88'></div>
+     <div class="cellb" id='c89'></div>
+   </div>
+   <div class='cellRow' id='r9'>
+     <div class="cell2" id='c90'></div>
+     <div class="cell2" id='c91'></div>
+     <div class="cell2" id='c92'></div>
+     <div class="cell2" id='c93'></div>
+     <div class="cell2" id='c94'></div>
+     <div class="cell2" id='c95'></div>
+     <div class="cell2" id='c96'></div>
+     <div class="cell2" id='c97'></div>
+     <div class="cell2" id='c98'></div>
+     <div class="cell2" id='c99'></div>
+   </div>
+   <div class='announce'>
+   <h3>  </h3>
+   </div>
+  <div class='fleet' id='fleetSecond'>
+     <div class="ship2" id='ship5'></div>
+     <div class="ship2" id='ship4'></div>
+     <div class="ship2" id='ship3'></div>
+     <div class="ship2" id='ship3b'></div>
+     <div class="ship2" id='ship2'></div>
+   </div>
+   </section>
+</div>
+
+   <!--- Game Third Page-->
+
+<div class='gameThird'>
+<h1>Congratulations,</h1>
+<h1 id='winnersName'></h1>
+<h1>You are a Battleship Winner!!!</h1>
+</div>
+ </main>
+</div>
+<script src='js/app.js'></script>
+</body>
+</html>
