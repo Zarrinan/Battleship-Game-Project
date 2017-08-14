@@ -119,6 +119,20 @@ checkShip2();
 checkWin();
 });
 
+$(document).ready(function clicksNumber () {
+let count = 0;
+  $('.cell2').click(function() {
+    count++;
+    $('#counter').html('Number of clicks is: '+count);
+    console.log(count);
+    if (count === 35){
+    $cell2.off('click');
+    $cellb.off('click');
+    alert('Game is over:(');
+  };
+});
+});
+
 
 //once a cell with ship is clicked, take that cell's Id
 //and find its position on a reference $battleships array
@@ -182,8 +196,8 @@ function checkWin() {
   setTimeout(function() {goToThird();}, 600);
 //display a player's name in a congrats message
   $winName.append($input.val());
+    }
   }
-}
 };
 
 

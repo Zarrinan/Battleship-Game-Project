@@ -260,6 +260,19 @@ img {
   height: 100%;
 }
 
+#counter {
+  float: right;
+  margin-right: 200px;
+  margin-top: 30px;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px 15px;
+  background-color: rgba(204,204,204,0.8);
+}
+
 @media (max-width: 1024px) {
 .landingPage {
   width: 700px; height: 600px;
@@ -325,7 +338,7 @@ h1 {
 .cellb {height: 35px;}
 
 .gameThird {width: 700px; height: 600px;}
-
+}
 
 
 
