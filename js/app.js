@@ -142,31 +142,31 @@ $cellb.click(function sendToArray() {
 //length, condition is met, which means, the whole ship is destroyed
 function checkShip5() {
   if ($ships[0].length === 4) {
-    alert('ship 5 is destroyed')
+    setTimeout(function() {alert('Ship 5 has been destroyed'); }, 300);
   }
 }
 
 function checkShip4() {
   if ($ships[1].length === 3) {
-    alert('ship 4 is destroyed');
+    setTimeout(function() {alert('Ship 4 has been destroyed'); }, 300);
   };
 }
 
 function checkShip3() {
   if ($ships[2].length === 2) {
-    alert('ship 3 is destroyed')
+    setTimeout(function() {alert('Ship 3 has been destroyed'); }, 300);
   }
 }
 
 function checkShip3b() {
   if ($ships[3].length === 2) {
-    alert('ship 3b is destroyed')
+    setTimeout(function() {alert('Ship 3b has been destroyed'); }, 300);
   }
 }
 
  function checkShip2() {
   if ($ships[4].length === 1) {
-    alert('ship 2 is destroyed');
+    setTimeout(function() {alert('Ship 2 has been destroyed'); }, 300);
     console.log($ship2);
   }
 }
