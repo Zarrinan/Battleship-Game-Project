@@ -27,12 +27,14 @@ window.onload = function() {
     $input = $('#forName');
     $winName = $('#winnersName');
 
+
 //enter a default placeholder phrase in input value
   if ($input.val() === '') {
     $input.attr('placeholder', 'enter a player\'s name');
 //and give a focus to the input button
     $input.focus();
   }
+
 
 //once a player enters their name, by clicking on the submit button, or by
 //hitting return a player goes from landding page to the game first page

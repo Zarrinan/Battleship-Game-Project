@@ -1,115 +1,36 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #1: The Game
+*** Zarrina Niyazova / 08/13/2017 ***
 
-#### Overview
+# Battleship Game Proposal
 
-Let's start out with something fun - a game!
+## What is Battleship game?
 
-Everyone will get a chance to be creative, and work through some really tough programming challenges - it's up to you to use what you've learned to come up with a fun and interesting game.
-
-You will be working individually for this project, but we'll be guiding you along the process and helping as you go.
-
-As part of this project, you'll be required to create a project presentation that you will use to present your work at the end of project week. Your goal for this presentation is to extract the most important aspects of what went into building your project into easy-to-use language and practice speaking and presenting about your code.
-
-Show us what you've got!
+Battleship (also Battleships or Sea Battle) is a guessing game for two players. It is played on ruled grids on which the players' fleets of ships (including battleships) are marked. The locations of the fleet are concealed from the other player. Players alternate turns calling "shots" at the other player's ships, and the objective of the game is to destroy the opposing player's fleet (from [wikipedia source](https://en.wikipedia.org/wiki/Battleship_(game))). 
 
 
----
+## Wireframes
 
-#### Requirements
+Game wireframes are 
 
-Your app must:
+[landing page](https://image.ibb.co/jeDKcF/Screenshot_2017_08_11_10_43_49.png)
 
-- Your game should have two pages: a landing page and a game page
-- Use only jQuery for DOM manipulation
-- Deploy your game online to GitHub pages
-- Include at least one CSS transition fired by a DOM event
-- Create a landing page that includes a form
-- Use your form to collect information about the user and display that information on the game page; be sure to add things to your form, if needed, like buttons, sliders, checkboxes, radio buttons, etc.
-- Style your form, landing page, and game page with class-based CSS (no inline styles)
-- Include a media query for a tablet to make your pages responsive
-- Use flexbox to lay out your game
-- **Create and get approval for a wireframe for your game page**
-- Comment your code appropriately
-- Adhere to the [AirBnB style guide](https://github.com/airbnb/javascript) for writing your JavaScript
-- Adhere to the [Google style guide](https://google.github.io/styleguide/htmlcssguide.xml) for writing your HTML/CSS
+[game first page](https://image.ibb.co/kUnO4v/Screenshot_2017_08_11_10_44_13.png)
 
-Your presentation must:
+## Initial thoughts on game structure
 
-- Be at least 5 slides
-- Use easy-to-understand language and avoid too much "insider" terminology
-- Include at least one wireframe that shows your game page
-- Include a screenshot of the existing landing page you've replicated
-- Answer the following questions:
-	- What features did you include?
-	- Were there any constraints you had to work with? (e.g. technological, timing, content, etc.)
-	- Is there any other information you think might help us (your stakeholders) understand what you've built?
+Initially, it is a 2 player game. First, I thought there would be 2 players, and for each player there would be a 10-row grid on the screen. Since players would not be able to hide their fleets from each other while placing them, and there is only one screen, I decided to make it a one player game, with the fleet randomly distributed on one grid by a computer, where a player has to guess where the battles are. The number of a player's turns will be limited, so there still will be a chance for a player not to win the game.
 
-***Note***
-If you're creating a two (or more)-player game, you MUST:
+If a player hits a target, the event listener for that cell is  removed, when a battle is fully destroyed (all cells are clicked on) the player is notified (message on the screen). The game stops when a player destroyed all battles.
 
-- allow players to take turns
-- design logic for winning & visually display which player has won
+Working with event listeners, nested array and jQuery was challenging.
+
+## Phases of Completion
+
+First, I wrote down how I saw the game flow and all the features I wanted to see on the screen. Scores, a player's name, timer, css, animation etc. Not all of them can be implemented. There are the minimum necessary ones, and the optional ones will come later.
+Then, I create the wireframes with minimum requirements and wrote the pseudocode.
+And wrote the code.
 
 
-**Bonus**
+## Links and Resources
+[Battleship online game](http://www.battleshiponline.org/)
 
-- If this is a one-player game, design logic for winning & visually display which player won (why? not all games have one winner)
-- Include at least one animation using HTML Canvas or SVG 
-- Include a "Tutorial Section" of this landing page (why: instructions help think through the "UX" of your project)
-
-
----
-
-#### Necessary Deliverables
-
-For the app:
-
-* A working game, built by you, hosted on [GitHub Pages](https://pages.github.com/)
-* A link to your hosted working game in the URL section of your GitHub repo
-* A git repository hosted on GitHub, with a link to your hosted game, and frequent commits dating back to the very beginning of the project
-* A readme.md file with explanations of the technologies used, wireframes the approach taken, installation instructions, unsolved problems, etc.
-
-For the presentation:
-
-* Create a presentation deck - Google Slides, Keynote, PowerPoint - of at least 5 slides that answers the questions above and images of your wireframes and a screenshot of your landing page.
-
----
-
-#### Suggested Ways to Get Started
-
-* Break the project down into different components (data, presentation, views, style, DOM manipulation) and brainstorm each component individually. Use whiteboards!
-* Use your Development Tools (console.log, inspector, alert statements, etc) to debug and solve problems
-* Work through the lessons in class & ask questions when you need to! Think about adding relevant code to your game each night, instead of, you know... _procrastinating_.
-* Commit early, commit often. Don’t be afraid to break something because you can always go back in time to a previous version.
-* Consult documentation resources (MDN, jQuery, etc.) at home to better understand what you’ll be getting into.
-* Don’t be afraid to write code that you know you will have to remove later. Create temporary elements (buttons, links, etc) that trigger events if real data is not available. For example, if you’re trying to figure out how to change some text when the game is over but you haven’t solved the win/lose game logic, you can create a button to simulate that until then.
-
----
-
-#### Potential Project Ideas
-
-##### Blackjack
-Make a one player game where people down on their luck can lose all their money by guessing which card the computer will deal next!
-
-##### Self-scoring Trivia
-Test your wits & knowledge with whatever-the-heck you know about (so you can actually win). Guess answers, have the computer tell you how right you are!
-
----
-
-### Useful Resources
-
-* **[MDN Javascript Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)** _(a great reference for all things Vanilla Javascript)_
-* **[jQuery Docs](http://api.jquery.com)** _(if you're using jQuery)_
-* **[GitHub Pages](https://pages.github.com)** _(for hosting your game)_
-
----
-
-#### Project Feedback + Evaluation
-
-Your project will be evaluated using [this rubric](rubric.md), assessing the following:
-
-- **Professionalism**
-- **Functionality and Requirements**
-- **Quality and Consistency**
-- **Workflow and Deployment**
-- **Creativity**
+[Wikipedia](https://en.wikipedia.org/wiki/Battleship)
