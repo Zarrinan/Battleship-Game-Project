@@ -1,4 +1,4 @@
-*** Zarrina Niyazova / 08/13/2017 ***
+ Zarrina Niyazova / 08/13/2017 ***
 
 # Battleship Game Proposal
 

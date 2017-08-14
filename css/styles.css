@@ -260,6 +260,7 @@ img {
   height: 100%;
 }
 
+<<<<<<< HEAD
 #counter {
   float: right;
   margin-right: 200px;
@@ -273,6 +274,8 @@ img {
   background-color: rgba(204,204,204,0.8);
 }
 
+=======
+>>>>>>> 6025fff22825218a554e2891bcf9563ab9478085
 @media (max-width: 1024px) {
 .landingPage {
   width: 700px; height: 600px;
@@ -338,7 +341,11 @@ h1 {
 .cellb {height: 35px;}
 
 .gameThird {width: 700px; height: 600px;}
+<<<<<<< HEAD
 }
+=======
+
+>>>>>>> 6025fff22825218a554e2891bcf9563ab9478085
 
 
 
