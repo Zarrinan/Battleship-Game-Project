@@ -1,5 +1,3 @@
-*** Zarrina Niyazova / 08/13/2017 ***
-
 # Battleship Game Proposal
 
 ## What is a Battleship game?
