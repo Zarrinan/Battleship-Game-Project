@@ -124,7 +124,8 @@ $(document).ready(function clicksNumber () {
 let count = 0;
   $('.cell2').click(function() {
     count++;
-    $('#counter').html('Number of clicks is: '+count);
+    let turns = 35 - +count;
+    $('#counter').html('Turns left: '+turns);
     console.log(count);
 //if a player makes 35 unsuccessfull clicks, the game stops and reloads
     if (count === 35){
