@@ -51,13 +51,6 @@ $startgame.click(function goToSecond(){
         $gameSecond.show();
         $landingPage.hide();
         $gameThird.hide();
- //by clicking on ships,  a player made them invisible, I'll need them on the game second page
- //so, a while a player goes to the game second page, ships are visible again
-        $ship5.css('visibility', 'visible');
-        $ship4.css('visibility', 'visible');
-        $ship3.css('visibility', 'visible');
-        $ship3b.css('visibility', 'visible');
-        $ship2.css('visibility', 'visible');
     });
 //once winning condition is met, a player is automatically redirected to the third page
 //with a congratulation message
@@ -175,6 +168,7 @@ $cellb.click(function sendToArray() {
 //length, condition is met, which means, the whole ship is destroyed
 function checkShip5() {
   if ($ships[0].length === 4) {
+    $ship5.css('visibility', 'visible');
     setTimeout(function() {alert('Ship 5 has been destroyed'); }, 300);
   }
 }

@@ -198,7 +198,7 @@ button {
 #counter {
   float: right;
   margin-right: 200px;
-  margin-top: 0;
+  margin-top: -30px;
   width: 100px;
   height: 40px;
   border-radius: 5px;
@@ -245,7 +245,7 @@ button {
 .fleet {
   width: 400px;
   height: 130px;
-  background-color: rgba(164,164,164,1);
+  background-color: rgba(164,164,164,0.9);
   display: flex;
   justify-content: space-around;
   align-items: center;
