@@ -188,10 +188,25 @@ button {
   width: 100px;
   height: 40px;
   border-radius: 5px;
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
   padding: 5px 15px;
+  border: 2px solid rgb(104,104,104);
   visibility: visible;
+}
+
+#counter {
+  float: right;
+  margin-right: 200px;
+  margin-top: 0;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+  padding: 5px 15px;
+  border: 2px solid rgb(104,104,104);
+  background-color: rgba(204,204,204,0.8);
 }
 
 .grid {
@@ -275,18 +290,6 @@ img {
   height: 100%;
 }
 
-#counter {
-  float: right;
-  margin-right: 200px;
-  margin-top: 30px;
-  width: 100px;
-  height: 40px;
-  border-radius: 5px;
-  font-size: 18px;
-  text-align: center;
-  padding: 5px 15px;
-  background-color: rgba(204,204,204,0.8);
-}
 
 
 @media (max-width: 1024px) {
@@ -323,8 +326,8 @@ h1 {
 
 .gameFirst {width: 700px; height: 600px;}
 
-#startgame {
-  margin-right: 30px;
+.startgame {
+  margin-right: 20px;
   margin-top: ;
 }
 .cellRow {
@@ -348,6 +351,10 @@ h1 {
 }
 .gameSecond {
   width: 700px; height: 600px;
+}
+
+#counter {
+  margin-right: 20px;
 }
 .cell  {height: 35px;}
 .cell2 {height: 35px;}
