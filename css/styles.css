@@ -168,7 +168,7 @@ p:hover {
   margin: 0 auto;
 }
 
-#startgame {
+button {
   float: right;
   margin-right: 200px;
   margin-top: 0;
@@ -178,7 +178,22 @@ p:hover {
   font-size: 15px;
   text-align: center;
   padding: 5px 15px;
+  visibility: hidden;
 }
+
+.startgame {
+  float: right;
+  margin-right: 200px;
+  margin-top: 0;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 15px;
+  text-align: center;
+  padding: 5px 15px;
+  visibility: visible;
+}
+
 .grid {
   border-radius: 25px;
 }

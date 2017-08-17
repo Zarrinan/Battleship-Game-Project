@@ -7,7 +7,7 @@ window.onload = function() {
     $gameSecond = $('.gameSecond');
     $gameThird = $('.gameThird');
     $grid = $('.grid')
-    $startgame = $('#startgame');
+    $startgame = $('button');
     $cell = $('.cell');
     $cell2 = $('.cell2');
     $cellb = $('.cellb');
@@ -67,23 +67,40 @@ function goToThird(){
         $landingPage.hide();
         $gameThird.show();
     };
+
+
 //below functions are for the ships uploading to the dock
 //once a player clicks on a ship, it becomes invisible (is uploaded on the dock)
 $ship5.click(function placeShip5(){
         $ship5.css('visibility', 'hidden');
+        forStartGame();
     });
 $ship4.click(function placeShip4(){
         $ship4.css('visibility', 'hidden');
+        forStartGame();
     });
 $ship3.click(function placeShip3(){
         $ship3.css('visibility', 'hidden');
+        forStartGame();
     });
 $ship3b.click(function placeShip3b(){
         $ship3b.css('visibility', 'hidden');
+        forStartGame();
     });
 $ship2.click(function placeShip2(){
         $ship2.css('visibility', 'hidden');
+        forStartGame();
     });
+
+function forStartGame() {
+  if (($ship5.css('visibility') === 'hidden') &&
+      ($ship4.css('visibility') === 'hidden') &&
+      ($ship3.css('visibility') === 'hidden') &&
+      ($ship3b.css('visibility') === 'hidden') &&
+      ($ship2.css('visibility') === 'hidden')){
+    $startgame.addClass("startgame");
+  }
+};
 
 
 //reference array for ships placement, every ship is a nested array
